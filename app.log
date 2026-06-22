@@ -7,3 +7,27 @@
 2026-06-21 07:11:18,268 : menu : INFO : Main menu started
 2026-06-21 07:11:26,624 : menu : INFO : User selected Part settings
 2026-06-21 07:11:32,008 : menu : INFO : User selected Add part
+2026-06-21 12:20:51,019 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-21 12:20:51,050 : __main__ : INFO : Program started
+2026-06-21 12:20:51,082 : __main__ : INFO : User Ihsan logged in
+2026-06-21 12:20:51,216 : part_manager : INFO : Loaded 0 part configurations
+2026-06-21 12:22:19,576 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-21 12:22:19,580 : __main__ : INFO : Program started
+2026-06-21 12:22:19,601 : __main__ : INFO : User Ihsan logged in
+2026-06-21 12:22:19,616 : part_manager : INFO : Loaded 0 part configurations
+2026-06-21 12:22:19,624 : menu : INFO : Menu system
+2026-06-21 12:38:09,410 : part_manager : INFO : Part config added: oil filter
+2026-06-22 13:12:52,298 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-22 13:12:52,310 : __main__ : INFO : Program started
+2026-06-22 13:12:52,351 : __main__ : INFO : User Ihsan logged in
+2026-06-22 13:12:52,375 : part_manager : INFO : Loaded 1 part configurations
+2026-06-22 13:12:52,378 : menu : INFO : Menu system
+2026-06-22 13:13:39,051 : car_ui : INFO : User added car: 
+2026-06-22 13:24:09,614 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-22 13:24:09,615 : __main__ : INFO : Program started
+2026-06-22 13:24:09,628 : __main__ : INFO : User Ihsan logged in
+2026-06-22 13:24:09,642 : part_manager : INFO : Loaded 1 part configurations
+2026-06-22 13:25:10,246 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-22 13:25:10,254 : __main__ : INFO : Program started
+2026-06-22 13:25:10,278 : __main__ : INFO : User Ihsan logged in
+2026-06-22 13:25:10,285 : part_manager : INFO : Loaded 1 part configurations

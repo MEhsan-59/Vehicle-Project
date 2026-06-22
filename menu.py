@@ -1,4 +1,4 @@
-#menu.py
+# menu.py
 import logging
 
 class Menu:
@@ -8,7 +8,6 @@ class Menu:
         self.logger.info("Menu system")
 
     def setting_menu(self) -> None:
-        self.logger.debug("Entering setting menu")
         while True:
             print("\n" + "="*40)
             print("SETTINGS MENU")
@@ -19,23 +18,16 @@ class Menu:
             print("="*40)
 
             choice = input("Enter your choice: ").strip()
-            self.logger.debug(f"Setting menu choice: {choice}")
-            
             if choice == '1':
-                self.logger.info("User selected Part settings")
-                self.config_menu() 
+                self.config_menu()
             elif choice == '2':
-                self.logger.info("User selected History settings")
                 self.history_menu()
             elif choice.lower() == 'b':
-                self.logger.info("Exiting settings menu")
                 break
             else:
-                self.logger.warning(f"Invalid setting menu choice: {choice}")
                 print("Invalid choice try again.")
 
     def config_menu(self) -> None:
-        self.logger.debug("Entering configuration menu")
         while True:
             print("\n" + "-"*30)
             print("PART CONFIGURATION")
@@ -47,29 +39,21 @@ class Menu:
             print("-"*30)
 
             choice = input("Enter your choice: ").strip()
-            self.logger.debug(f"Config menu choice: {choice}")
-            
             if choice == '1':
-                self.logger.info("User selected Add part")
                 if self.ui:
-                    self.ui.add_part()
+                    self.ui.add_part_config(status="add")
             elif choice == '2':
-                self.logger.info("User selected Update part")
                 if self.ui:
-                    self.ui.update_part()
+                    self.ui.add_part_config(status="update")   # PartUI handles both
             elif choice == '3':
-                self.logger.info("User selected Remove part")
                 if self.ui:
-                    self.ui.remove_part()
+                    self.ui.remove_part_config()
             elif choice.lower() == 'b':
-                self.logger.info("Exiting config menu")
                 break
             else:
-                self.logger.warning(f"Invalid config menu choice: {choice}")
                 print("Invalid choice try again.")
 
     def history_menu(self) -> None:
-        self.logger.debug("Entering history menu")
         while True:
             print("\n" + "-"*30)
             print("HISTORY SETTINGS")
@@ -81,32 +65,24 @@ class Menu:
             print("-"*30)
 
             choice = input("Enter your choice: ").strip()
-            self.logger.debug(f"History menu choice: {choice}")
-
             if choice == '1':
-                self.logger.info("Viewing all history")
                 if self.ui:
-                    self.ui.view_all_history()
+                    self.ui.show_history('all', '')
             elif choice == '2':
                 car_num = input("Enter car number: ")
-                self.logger.info(f"Viewing history for car: {car_num}")
                 if self.ui:
-                    self.ui.view_history_by_car(car_num)
+                    self.ui.show_history('car', car_num)
             elif choice == '3':
                 part_name = input("Enter part name: ")
-                self.logger.info(f"Viewing history for part: {part_name}")
                 if self.ui:
-                    self.ui.view_history_by_part(part_name)
+                    self.ui.show_history('part', part_name)
             elif choice.lower() == 'b':
-                self.logger.info("Exiting history menu")
                 break
             else:
-                self.logger.warning(f"Invalid history menu choice: {choice}")
                 print("Invalid choice try again.")
             input("\nPress Enter to continue...")
 
     def main_menu(self) -> None:
-        self.logger.info("Main menu started")
         while True:
             print("\n" + "="*50)
             print("\n1. Add Car")
@@ -119,43 +95,25 @@ class Menu:
             print("="*50)
 
             choice = input("Enter your choice: ").strip()
-            
             if choice.lower() == 'b':
-                self.logger.info("User exiting application")
                 print("\nThank you for using Vehicle Maintenance System!")
                 break
-            
             try:
                 choice_num = int(choice)
             except ValueError:
                 print("Invalid choice. Please enter a number or 'b' to exit.")
                 continue
-            
+
             if choice_num == 1:
-                if self.ui:
-                    self.ui.add_car()
-                else:
-                    print("UI not initialized")
+                if self.ui: self.ui.add_car()
             elif choice_num == 2:
-                if self.ui:
-                    self.ui.update_part()
-                else:
-                    print("UI not initialized")
+                if self.ui: self.ui.update_part()
             elif choice_num == 3:
-                if self.ui:
-                    self.ui.view_detail()
-                else:
-                    print("UI not initialized")
+                if self.ui: self.ui.view_detail()
             elif choice_num == 4:
-                if self.ui:
-                    self.ui.delete_car()
-                else:
-                    print("UI not initialized")
+                if self.ui: self.ui.delete_car()
             elif choice_num == 5:
-                if self.ui:
-                    self.ui.update_km()
-                else:
-                    print("UI not initialized")
+                if self.ui: self.ui.update_km()
             elif choice_num == 6:
                 self.setting_menu()
             else:

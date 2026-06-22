@@ -1,20 +1,55 @@
-#main.py
+# main.py
+from user_interface import PartUI, CarUI, MaintenanceUI
 from db_connection import DatabaseConnection
+from part_repository import PartRepository
+from service import MaintenanceService
 from logger_setup import setup_logger
+from part_manager import PartManager
+from car_manager import CarManager
+from maintenance_manager import MaintenanceManager
+from menu import Menu
 import logging
 import account_system
-from menu import Menu
+from vehicle_ui import VehicleUI
 
 def main():
     setup_logger()
     logger = logging.getLogger(__name__)
     logger.info("Program started")
-    
+
     while True:
         active_account = account_system.main()
         if active_account:
-            logger.info(f"User {active_account.user_id} logged in")
-            menu = Menu()
+            active_user = active_account.user_id
+            logger.info(f"User {active_user} logged in")
+
+            db = DatabaseConnection()
+
+            # Part subsystem
+            part_repo = PartRepository(db)
+            part_manager = PartManager(part_repo)
+            part_ui = PartUI(part_manager)
+
+            # Car subsystem
+            car_manager = CarManager(db, active_user)
+            car_ui = CarUI(car_manager, active_user)
+
+            # Maintenance subsystem
+            maintenance_manager = MaintenanceManager(db, part_manager, car_manager)
+            maintenance_service = MaintenanceService(maintenance_manager)
+            maintenance_ui = MaintenanceUI(maintenance_manager, maintenance_service, active_user)
+
+            # Combined UI – note the correct order:
+            vehicle_ui = VehicleUI(
+                active_user=active_user,
+                part_ui=part_ui,
+                car_ui=car_ui,
+                maintenance_ui=maintenance_ui,
+                maintenance_manager=maintenance_manager,
+                service=maintenance_service
+            )
+
+            menu = Menu(vehicle_ui)
             menu.main_menu()
         else:
             logger.info("No active account, exiting")
