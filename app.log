@@ -47,3 +47,13 @@
 2026-06-23 13:39:12,079 : menu : INFO : Menu system
 2026-06-23 13:39:21,318 : car_manager : INFO : Car added: 1122
 2026-06-23 13:39:21,320 : car_ui : INFO : User added car: 1122
+2026-06-23 13:45:34,292 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-23 13:45:34,294 : __main__ : INFO : Program started
+2026-06-23 13:45:34,299 : __main__ : INFO : User Ihsan logged in
+2026-06-23 13:45:34,308 : part_manager : INFO : Loaded 1 part configurations
+2026-06-23 13:45:34,321 : car_manager : INFO : Loaded 1 vehicles for user Ihsan
+2026-06-23 13:45:34,324 : menu : INFO : Menu system
+2026-06-23 13:46:28,536 : car_manager : INFO : KM updated for 1122: 78 → 79
+2026-06-23 13:46:28,537 : car_ui : INFO : User updated KM for 1122 to 79
+2026-06-23 13:46:50,473 : car_manager : INFO : Car deleted: 1122
+2026-06-23 13:46:50,474 : car_ui : INFO : User deleted car: 1122
