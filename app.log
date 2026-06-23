@@ -57,3 +57,69 @@
 2026-06-23 13:46:28,537 : car_ui : INFO : User updated KM for 1122 to 79
 2026-06-23 13:46:50,473 : car_manager : INFO : Car deleted: 1122
 2026-06-23 13:46:50,474 : car_ui : INFO : User deleted car: 1122
+2026-06-23 13:51:13,102 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-23 13:51:13,119 : __main__ : INFO : Program started
+2026-06-23 13:51:13,156 : __main__ : INFO : User Ihsan logged in
+2026-06-23 13:51:13,199 : part_manager : INFO : Loaded 1 part configurations
+2026-06-23 13:51:13,221 : car_manager : INFO : Loaded 0 vehicles for user Ihsan
+2026-06-23 13:51:13,225 : menu : INFO : Menu system
+2026-06-23 13:51:33,873 : car_manager : INFO : Car added: 1122
+2026-06-23 13:51:33,874 : car_ui : INFO : User added car: 1122
+2026-06-23 15:21:04,405 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-23 15:21:04,433 : __main__ : INFO : Program started
+2026-06-23 15:21:04,538 : __main__ : INFO : User Ihsan logged in
+2026-06-23 15:21:04,547 : part_manager : INFO : Loaded 1 part configurations
+2026-06-23 15:21:04,564 : car_manager : INFO : Loaded 1 vehicles for user Ihsan
+2026-06-23 15:21:44,863 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-23 15:21:44,869 : __main__ : INFO : Program started
+2026-06-23 15:21:44,890 : __main__ : INFO : User Ihsan logged in
+2026-06-23 15:21:44,902 : part_manager : INFO : Loaded 1 part configurations
+2026-06-23 15:21:44,911 : car_manager : INFO : Loaded 1 vehicles for user Ihsan
+2026-06-23 15:21:46,884 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-23 15:21:46,892 : __main__ : INFO : Program started
+2026-06-23 15:21:46,915 : __main__ : INFO : User Ihsan logged in
+2026-06-23 15:21:46,928 : part_manager : INFO : Loaded 1 part configurations
+2026-06-23 15:21:46,944 : car_manager : INFO : Loaded 1 vehicles for user Ihsan
+2026-06-23 15:21:48,698 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-23 15:21:48,705 : __main__ : INFO : Program started
+2026-06-23 15:21:48,734 : __main__ : INFO : User Ihsan logged in
+2026-06-23 15:21:48,749 : part_manager : INFO : Loaded 1 part configurations
+2026-06-23 15:21:48,770 : car_manager : INFO : Loaded 1 vehicles for user Ihsan
+2026-06-23 15:21:50,102 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-23 15:21:50,111 : __main__ : INFO : Program started
+2026-06-23 15:21:50,139 : __main__ : INFO : User Ihsan logged in
+2026-06-23 15:21:50,152 : part_manager : INFO : Loaded 1 part configurations
+2026-06-23 15:21:50,173 : car_manager : INFO : Loaded 1 vehicles for user Ihsan
+2026-06-23 15:21:52,024 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-23 15:21:52,033 : __main__ : INFO : Program started
+2026-06-23 15:21:52,054 : __main__ : INFO : User Ihsan logged in
+2026-06-23 15:21:52,075 : part_manager : INFO : Loaded 1 part configurations
+2026-06-23 15:21:52,098 : car_manager : INFO : Loaded 1 vehicles for user Ihsan
+2026-06-23 15:21:54,037 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-23 15:21:54,044 : __main__ : INFO : Program started
+2026-06-23 15:21:54,057 : __main__ : INFO : User Ihsan logged in
+2026-06-23 15:21:54,068 : part_manager : INFO : Loaded 1 part configurations
+2026-06-23 15:21:54,081 : car_manager : INFO : Loaded 1 vehicles for user Ihsan
+2026-06-23 15:21:55,758 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-23 15:21:55,767 : __main__ : INFO : Program started
+2026-06-23 15:21:55,787 : __main__ : INFO : User Ihsan logged in
+2026-06-23 15:21:55,798 : part_manager : INFO : Loaded 1 part configurations
+2026-06-23 15:21:55,815 : car_manager : INFO : Loaded 1 vehicles for user Ihsan
+2026-06-23 15:21:57,648 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-23 15:21:57,653 : __main__ : INFO : Program started
+2026-06-23 15:21:57,670 : __main__ : INFO : User Ihsan logged in
+2026-06-23 15:21:57,679 : part_manager : INFO : Loaded 1 part configurations
+2026-06-23 15:21:57,689 : car_manager : INFO : Loaded 1 vehicles for user Ihsan
+2026-06-23 15:25:07,438 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-23 15:25:07,447 : __main__ : INFO : Program started
+2026-06-23 15:25:07,461 : __main__ : INFO : User Ihsan logged in
+2026-06-23 15:25:07,472 : part_manager : INFO : Loaded 1 part configurations
+2026-06-23 15:25:07,485 : car_manager : INFO : Loaded 1 vehicles for user Ihsan
+2026-06-23 15:25:07,752 : menu : INFO : Menu system
+2026-06-23 15:32:22,754 : root : INFO : LOGGING SYSTEM INITIALIZED.
+2026-06-23 15:32:22,762 : __main__ : INFO : Program started
+2026-06-23 15:32:22,790 : __main__ : INFO : User Ihsan logged in
+2026-06-23 15:32:22,806 : part_manager : INFO : Loaded 1 part configurations
+2026-06-23 15:32:22,829 : car_manager : INFO : Loaded 1 vehicles for user Ihsan
+2026-06-23 15:32:22,855 : menu : INFO : Menu system
+2026-06-23 15:33:09,382 : maintenance_manager : INFO : oil filter added for 1122
