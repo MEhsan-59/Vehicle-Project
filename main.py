@@ -2,6 +2,7 @@
 from user_interface import PartUI, CarUI, MaintenanceUI
 from db_connection import DatabaseConnection
 from part_repository import PartRepository
+from car_repository import CarRepository
 from service import MaintenanceService
 from logger_setup import setup_logger
 from part_manager import PartManager
@@ -31,7 +32,8 @@ def main():
             part_ui = PartUI(part_manager)
 
             # Car subsystem
-            car_manager = CarManager(db, active_user)
+            car_repo = CarRepository(db)
+            car_manager = CarManager(car_repo, active_user)
             car_ui = CarUI(car_manager, active_user)
 
             # Maintenance subsystem
